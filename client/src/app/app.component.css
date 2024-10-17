@@ -1,0 +1,17 @@
+.toolbar {
+    background-color: #4c53c2; 
+    color: #fff; 
+    padding: 10px; 
+    display: flex;
+    justify-content: space-between; 
+  }
+  
+  .toolbar span {
+    margin-right: 30px; 
+  }
+  
+  .toolbar a ,.toolbar span{
+    color: #fff; 
+    font-size: 16px; 
+    text-decoration: none; 
+  }

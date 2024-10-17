@@ -1,0 +1,47 @@
+/* .dialog-actions,.example-section {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .example-margin-bottom {
+    margin-bottom: 20px; 
+  }
+   */
+
+   /* Style pour le titre h1 */
+h1.mat-dialog-title {
+  font-size: 24px;
+  color: #333;
+  /* Autres styles... */
+}
+
+/* Style pour les champs de formulaire */
+.mat-form-field {
+  margin-bottom: 16px;
+  width: 100%;
+  /* Autres styles... */
+}
+
+/* Style pour les boutons d'action du dialogue */
+.dialog-actions {
+  display: flex;
+  justify-content: center;
+  margin-top: 16px;
+  /* Autres styles... */
+}
+
+/* Style pour le bouton Enregistrer */
+button[mat-raised-button][color="primary"] {
+  background-color: #007bff;
+  color: #fff;
+  margin-right: 8px; /* Ajustez la marge entre les boutons */
+  /* Autres styles... */
+}
+
+/* Style pour le bouton Fermer */
+button[mat-raised-button][color="warn"] {
+  background-color: #dc3545;
+  color: #fff;
+  margin-left: 8px; /* Ajustez la marge entre les boutons */
+  /* Autres styles... */
+}

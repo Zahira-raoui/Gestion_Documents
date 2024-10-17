@@ -1,0 +1,33 @@
+<div class="card-container">
+  <div *ngFor="let folder of userFolders" class="card-item">
+    <mat-card>
+      <mat-card-header>
+        <mat-card-title>{{ folder.name }}</mat-card-title>
+      </mat-card-header>
+
+      <mat-card-content>
+        <hr>
+        <div *ngFor="let document of folder.documents">
+          <h3 class="document">Document</h3>
+          <p><span class="attribute">ID:</span>  {{ document.id }}</p>
+          <p><span class="attribute">Name:</span> {{ document.name }}</p>
+          <p><span class="attribute">Chemain:</span> {{ document.chemain}}</p>
+          <p><span class="attribute">Type:</span> {{ document.type }}</p>
+          <p><span class="attribute">Size:</span> {{ document.size }} bytes</p>
+
+          <hr>
+        </div>
+      </mat-card-content>
+
+      <mat-card-actions>
+        <button mat-button color="primary" (click)="updateFolder(folder.id)" >Modifier</button>
+        <button mat-button color="warn" (click)="deleteFolder(folder.id)">Supprimer</button>
+      </mat-card-actions>
+    </mat-card>
+  </div>
+</div><div class="center-buttons">
+  <button mat-raised-button color="primary" style="margin-top: 16px;" (click)="onButtonClicked()">Manipuler Documents</button>
+
+</div>
+
+ 

@@ -1,0 +1,26 @@
+.card-container {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;  
+  }
+  
+  .card-item {
+    margin-right: 16px; 
+  }
+  
+  .attribute {
+    font-weight: bold;
+    color: orange;
+  }
+  
+  .document{
+    font-weight: bold;
+    color:red;
+  }
+  .center-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px; /* Ajoutez une marge au besoin */
+  }
+  

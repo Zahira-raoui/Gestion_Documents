@@ -1,0 +1,30 @@
+<h1 mat-dialog-title>Modifier le document</h1>
+<form [formGroup]="documentForm" (ngSubmit)="updatedocument()">
+  <section class="example-section example-margin-bottom">
+    <input type="hidden" formControlName="id" />
+    
+    <mat-form-field appearance="fill">
+      <mat-label>Nouveau Nom</mat-label>
+      <input matInput formControlName="name" placeholder="Entrez le nouveau nom" />
+    </mat-form-field>
+    <mat-form-field appearance="fill">
+    <mat-label>Nouveau chemain</mat-label>
+      <input matInput formControlName="chemain" placeholder="Entrez le nouveau chemain" />
+    </mat-form-field>
+
+    <mat-form-field appearance="fill">
+      <mat-label>Nouveau Type</mat-label>
+      <input matInput formControlName="type" placeholder="Entrez le nouveau type" />
+    </mat-form-field>
+
+    <mat-form-field appearance="fill">
+      <mat-label>Nouvelle Taille</mat-label>
+      <input matInput formControlName="size" placeholder="Entrez la nouvelle taille" />
+    </mat-form-field>
+  </section>
+
+  <div mat-dialog-actions class="dialog-actions">
+    <button type="submit" mat-raised-button color="primary" cdkFocusInitial>Enregistrer</button>
+    <button mat-raised-button color="warn" mat-dialog-close>Fermer</button>
+  </div>
+</form>

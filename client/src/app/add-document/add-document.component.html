@@ -1,0 +1,46 @@
+
+<div class="container">
+
+    <div class="form-container center-dialog">
+      <mat-card>
+        <mat-card-content>
+          <h1>Ajouter un document</h1>
+
+          <form [formGroup]="addDocumentForm" (ngSubmit)="proceedregister()">
+                <mat-form-field class="example-full-width">
+                    <mat-label>Identifiant</mat-label>
+                    <input matInput formControlName="id">
+                  </mat-form-field>
+            <mat-form-field class="example-full-width">
+              <mat-label>Name</mat-label>
+              <input matInput formControlName="name">
+            </mat-form-field>
+
+            <mat-form-field class="example-full-width">
+              <mat-label>Chemain</mat-label>
+              <input matInput formControlName="chemain">
+            </mat-form-field>
+            <mat-form-field class="example-full-width">
+              <mat-label>Type</mat-label>
+              <input matInput formControlName="type">
+            </mat-form-field>
+            <mat-form-field class="example-full-width">
+                <mat-label>Size</mat-label>
+                <input matInput formControlName="size">
+              </mat-form-field>
+              
+            <div  class="button-container">
+              
+            <button mat-raised-button color="primary" type="submit" cdkFocusInitial>Soumettre</button>
+            <div class="button-spacing"></div> 
+
+            <button mat-raised-button color="warn" mat-dialog-close>Fermer</button>
+
+            </div>
+          </form>
+        </mat-card-content>
+      </mat-card>
+    </div>
+  </div>
+
+ 

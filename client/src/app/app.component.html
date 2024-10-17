@@ -1,0 +1,10 @@
+<div class="toolbar" *ngIf="isMenuVisible" role="banner">
+    <span >Bienvenue</span>
+    <div class="spacer"></div>
+    <a routerLink="/authentification">Déconnexion</a>
+  </div>
+  
+  <div class="content" style="width: 100%; display: block;" role="main">
+    <router-outlet></router-outlet>
+  </div>
+  

@@ -1,0 +1,19 @@
+<h1 mat-dialog-title>Modifier le nom de dossier </h1>
+<form [formGroup]="folderForm" (ngSubmit)="updateFolder()">
+  <section class="example-section example-margin-bottom">
+    <mat-form-field appearance="fill">
+      <mat-label>Nouveau Nom</mat-label>
+      <input matInput formControlName="name" placeholder="Entrez le nouveau nom" />
+    </mat-form-field>
+  </section>
+
+  <div mat-dialog-actions class="dialog-actions">
+    <button type="submit" mat-raised-button color="primary" cdkFocusInitial>Enregistrer</button>
+    <button mat-raised-button color="warn" mat-dialog-close>Fermer</button>
+  </div>
+</form>
+
+
+  
+
+  
